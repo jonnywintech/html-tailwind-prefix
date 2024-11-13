@@ -1,0 +1,33 @@
+{
+    "name": "tailwind-prefixer",
+    "displayName": "Tailwind Prefixer",
+    "description": "Add tw- prefix to Tailwind CSS classes",
+    "version": "0.0.1",
+    "publisher": "your-publisher-name",
+    "engines": {
+        "vscode": "^1.95.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:tailwind-prefixer.addPrefix"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "tailwind-prefixer.addPrefix",
+                "title": "Add tw- prefix to Tailwind classes"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.95.0",
+        "eslint": "^7.32.0"
+    }
+}
